@@ -1,56 +1,56 @@
-# F13 Key Sender �A�v���P�[�V����
+# F13 Key Sender アプリケーション
 
-## �T�v
-F13 Key Sender �A�v���P�[�V�����́AF13�L�[���w�肵���Ԋu�ő��M����V���v���ȃ��[�e�B���e�B�ł��B���̃A�v���P�[�V�������g�p���邱�ƂŁA�[���̃X���[�v��Ԃ�������邱�Ƃ��ł��܂��B
+## 概要
+F13 Key Sender アプリケーションは、F13キーを指定した間隔で送信するシンプルなユーティリティです。このアプリケーションを使用することで、端末のスリープ状態を回避することができます。
 
-## ���[�X�P�[�X
+## ユースケース
 
-F13 Key Sender �A�v���P�[�V�����́A���܂��܂ȃ��[�X�P�[�X�ɓK���Ă��܂��B�ȉ��́A���̃A�v���P�[�V�����̋�̓I�Ȏg�p��ł��B
+F13 Key Sender アプリケーションは、さまざまなユースケースに適しています。以下は、このアプリケーションの具体的な使用例です。
 
-### ���[�X�P�[�X 1: �I�����C���R���{���[�V�����c�[�����g�p���Ă���ꍇ
+### ユースケース 1: オンラインコラボレーションツールを使用している場合
 
-Slack��Microsoft Teams�Ȃǂ̃I�����C���R���{���[�V�����c�[�����g�p���Ă���ꍇ�A��ɍݐЏ�Ԃ�ۂ��Ƃ��ł��܂��B
+SlackやMicrosoft Teamsなどのオンラインコラボレーションツールを使用している場合、常に在籍状態を保ことができます。
 
-### ���[�X�P�[�X 2: �d�v�ȋƖ�������
+### ユースケース 2: 重要な業務活動中
 
-��c��v���[���e�[�V�����Ȃǂ̏d�v�ȋƖ��������A�[���̃X���[�v�ɂ�鎩���I�ȃI�t���C���܂��͕s�ݏ�Ԃ�����ł��܂��B
+会議やプレゼンテーションなどの重要な業務活動中、端末のスリープによる自動的なオフラインまたは不在状態を回避できます。
 
-### ���[�X�P�[�X 3: �d�v�ȃ^�X�N�����s��
+### ユースケース 3: 重要なタスクを実行中
 
-�g�D���̏d�v�ȃ^�X�N�����s���Ă���ہA���[�U�[�̓I�����C�����Ԃ��m�F����Ă��邱�Ƃ��������߂ɁA�I�����C����Ԃ�ۂ��Ƃ��ł��܂��B����ɂ��A���̃����o�[�����[�U�[�ɘA�����₷���Ȃ�A���͂����i����܂��B
+組織内の重要なタスクを実行している際、ユーザーはオンライン時間を確認されていることを示すために、オンライン状態を保つことができます。これにより、他のメンバーがユーザーに連絡しやすくなり、協力が促進されます。
 
-## �o�[�W����
-�o�[�W����: 1.0
+## バージョン
+バージョン: 1.0
 
-## �����
-- .NET Framework 4.5�ȏ�
+## 動作環境
+- .NET Framework 4.5以上
 
-## �C���X�g�[��
-1. [�����[�X�y�[�W](https://github.com/yutaka-art/Samples/F13KeySender/releases) ����ŐV�̃o�[�W�������_�E�����[�h���܂��B
-2. �_�E�����[�h�����t�@�C����C�ӂ̏ꏊ�ŉ𓀂��܂��B
+## インストール
+1. [リリースページ](https://github.com/yutaka-art/Samples/blob/main/F13KeySenderExec/releases/F13KeySenderExec.zip) から最新のバージョンをダウンロードします。
+2. ダウンロードしたファイルを任意の場所で解凍します。
 
-## �g����
-1. �A�v���P�[�V����(`F13KeySenderExec.exe`)���N�����܂��B
-2. �_�C�A���O�Łu���s���܂����H�v�ƕ\�����ꂽ��A[�͂�] ���N���b�N���܂��B
-3. F13�L�[���w�肵���Ԋu�ő��M����܂��B
-4. �I������ꍇ�́A�^�X�N�}�l�[�W�����`F13KeySenderExec`�v���Z�X���폜���Ă�������
-## �ݒ�
-- �w��Ԋu�̐ݒ�� `F13KeySenderExec.exe.config` �t�@�C������ύX�ł��܂��B �f�t�H���g�l��290�b�ł��B
+## 使い方
+1. アプリケーション(`F13KeySenderExec.exe`)を起動します。
+2. ダイアログで「続行しますか？」と表示されたら、[はい] をクリックします。
+3. F13キーが指定した間隔で送信されます。
+4. 終了する場合は、タスクマネージャより`F13KeySenderExec`プロセスを削除してください
+## 設定
+- 指定間隔の設定は `F13KeySenderExec.exe.config` ファイルから変更できます。 デフォルト値は290秒です。
 
-## ���C�Z���X
-���̃A�v���P�[�V������MIT���C�Z���X�̉��Œ񋟂���Ă��܂��B�ڍׂɂ��Ă� [LICENSE](LICENSE) �t�@�C�����������������B(InputSimulator)
+## ライセンス
+このアプリケーションはMITライセンスの下で提供されています。詳細については [LICENSE](LICENSE) ファイルをご覧ください。(InputSimulator)
 
-## �T�|�[�g
-������肪����ꍇ�A�ȉ��̘A����܂ł��₢���킹���������B
+## サポート
+質問や問題がある場合、以下の連絡先までお問い合わせください。
 
-- ���[��: union.dml@gmail.com
-- Issue�g���b�J�[: [GitHub Issues](https://github.com/yutaka-art/Samples/issues)
+- メール: union.dml@gmail.com
+- Issueトラッカー: [GitHub Issues](https://github.com/yutaka-art/Samples/issues)
 
-## �X�V����
-- 1.0 (2023-08-25): ���Ń����[�X
+## 更新履歴
+- 1.0 (2023-08-25): 初版リリース
 
-## ���ӎ���
-- ���̃A�v���P�[�V�����͓���̗p�r�Ɏg�p���邽�߂ɒ񋟂���Ă��܂��B�K�؂ɂ����p���������B
+## 注意事項
+- このアプリケーションは特定の用途に使用するために提供されています。適切にご利用ください。
 
-## �֘A�����N
-- [�v���W�F�N�g���|�W�g��](https://github.com/yutaka-art/Samples/)
+## 関連リンク
+- [プロジェクトリポジトリ](https://github.com/yutaka-art/Samples/)
