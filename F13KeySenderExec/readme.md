@@ -11,24 +11,24 @@ F13 Key Sender アプリケーションは、F13キーを指定した間隔で送信するシンプルなユー
 
 ## インストール
 1. [リリースページ](https://github.com/yutaka-art/Samples/F13KeySender/releases) から最新のバージョンをダウンロードします。
-2. ダウンロードしたファイルを実行します。
+2. ダウンロードしたファイルを任意の場所で解凍します。
 
 ## 使い方
-1. アプリケーションを起動します。
+1. アプリケーション(`F13KeySenderExec.exe`)を起動します。
 2. ダイアログで「続行しますか？」と表示されたら、[はい] をクリックします。
 3. F13キーが指定した間隔で送信されます。
-4. 終了する場合は、Taskmgrより「F13KeySenderExec」プロセスを削除してください
+4. 終了する場合は、タスクマネージャより`F13KeySenderExec`プロセスを削除してください
 ## 設定
-- 指定間隔の設定は `app.config` ファイルから変更できます。 デフォルト値は290秒です。
+- 指定間隔の設定は `F13KeySenderExec.exe.config` ファイルから変更できます。 デフォルト値は290秒です。
 
 ## ライセンス
-このアプリケーションはMITライセンスの下で提供されています。詳細については [LICENSE](LICENSE) ファイルをご覧ください。
+このアプリケーションはMITライセンスの下で提供されています。詳細については [LICENSE](LICENSE) ファイルをご覧ください。(InputSimulator)
 
 ## サポート
 質問や問題がある場合、以下の連絡先までお問い合わせください。
 
 - メール: union.dml@gmail.com
-- Issueトラッカー: [GitHub Issues](https://github.com/yutaka-art/Samples/F13KeySender/issues)
+- Issueトラッカー: [GitHub Issues](https://github.com/yutaka-art/Samples/issues)
 
 ## 更新履歴
 - 1.0 (2023-08-25): 初版リリース
