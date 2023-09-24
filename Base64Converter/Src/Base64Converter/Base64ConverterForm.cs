@@ -60,6 +60,8 @@ namespace Base64Converter
                         var decodedContent = Encoding.UTF8.GetString(Convert.FromBase64String(base64String));
 
                         var outputPath = Path.Combine(outputPathDirectory, Path.GetFileNameWithoutExtension(file) + "_Base64decode.json");
+                        var outputPath2 = Path.Combine(Path.GetDirectoryName(file), Path.GetFileNameWithoutExtension(file) + "_Base64decode.json");
+
                         File.WriteAllText(outputPath, decodedContent);
                         //MessageBox.Show($"デコード成功: {outputPath}");
                         counter++;
@@ -73,7 +75,10 @@ namespace Base64Converter
                         var json = JsonConvert.SerializeObject(jsonObject, Formatting.Indented);
 
                         var outputPath = Path.Combine(outputPathDirectory, Path.GetFileNameWithoutExtension(file) + "_Base64encode.json");
+                        var outputPath2 = Path.Combine(Path.GetDirectoryName(file), Path.GetFileNameWithoutExtension(file) + "_Base64encode.json");
+
                         File.WriteAllText(outputPath, json);
+                        File.WriteAllText(outputPath2, json);
                         //MessageBox.Show($"エンコード成功: {outputPath}");
                         counter++;
                     }
