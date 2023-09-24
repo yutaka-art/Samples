@@ -22,6 +22,23 @@
 4. Base64Converterフォルダ配下、と、選択した.jsonフォルダの配下へ変換した結果が出力されます。
 5. 終了する場合は、ウィンドウの×ボタンをクリック。
 
+## 出力方式
+### エンコード
+ファイル名:%元ファイル名%_Base64encode.json
+``` :json
+{
+  "inputParam_Base64": "ew0KICAib3…="
+}
+```
+
+### デコード
+ファイル名:%元ファイル名%_Base64decode.json
+``` :json
+{
+  "testkey":"testvalue"
+}
+```
+
 ## サポート・お問い合わせ
 - メール: union.dml@gmail.com
 - Issue: [GitHub Issues](https://github.com/yutaka-art/Samples/issues)
