@@ -10,7 +10,7 @@
 - 必須: .NET Core 7.0以上
 
 ## インストール方法
-1. [リリースページ](https://github.com/yutaka-art/Samples/blob/main/F13KeySenderExec/releases/Base64Converter.zip) から最新版をダウンロード。
+1. [リリースページ](https://github.com/yutaka-art/Samples/raw/main/Base64Converter/releases/Base64Converter.zip) から最新版をダウンロード。
 2. ダウンロードしたZIPファイルを適当な場所に解凍。
 
 ## 使用方法
