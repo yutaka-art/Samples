@@ -14,6 +14,7 @@ namespace Base64Converter
         public Base64ConverterForm()
         {
             InitializeComponent();
+            this.toolStripStatusLabel1.Text = string.Empty;
         }
 
         /// <summary>
@@ -63,6 +64,7 @@ namespace Base64Converter
                         var outputPath2 = Path.Combine(Path.GetDirectoryName(file), Path.GetFileNameWithoutExtension(file) + "_Base64decode.json");
 
                         File.WriteAllText(outputPath, decodedContent);
+                        File.WriteAllText(outputPath2, decodedContent);
                         //MessageBox.Show($"デコード成功: {outputPath}");
                         counter++;
                     }
@@ -85,12 +87,11 @@ namespace Base64Converter
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"エラー: {ex.Message}");
+                    this.toolStripStatusLabel1.Text = $"エラー: {ex.Message}";
                 }
             }
 
-            MessageBox.Show($"{counter.ToString()} 件処理しました。", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //System.Diagnostics.Process.Start(outputPathDirectory);
+            this.toolStripStatusLabel1.Text = $"{counter.ToString()} 件処理しました。";
         }
 
         /// <summary>

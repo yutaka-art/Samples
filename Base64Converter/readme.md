@@ -24,10 +24,15 @@
 
 ## 出力方式
 ### エンコード
-ファイル名:%元ファイル名%_Base64encode.json
 ``` :json
 {
-  "inputParam_Base64": "ew0KICAib3…="
+  "PostalCode" : "2700163"
+}
+```
+→
+``` :json
+{
+  "inputParam_Base64": "ew0KICAiUG9zdGFsQ29kZSIgOiAiMjcwMDE2MyINCn0="
 }
 ```
 
@@ -35,7 +40,13 @@
 ファイル名:%元ファイル名%_Base64decode.json
 ``` :json
 {
-  "testkey":"testvalue"
+  "inputParam_Base64": "ew0KICAiUG9zdGFsQ29kZSIgOiAiMjcwMDE2MyINCn0="
+}
+```
+→
+``` :json
+{
+  "PostalCode" : "2700163"
 }
 ```
 
