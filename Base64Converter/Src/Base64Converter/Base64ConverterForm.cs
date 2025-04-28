@@ -63,7 +63,7 @@ namespace Base64Converter
                         var outputPath = Path.Combine(outputPathDirectory, Path.GetFileNameWithoutExtension(file) + "_Base64decode.json");
                         var outputPath2 = Path.Combine(Path.GetDirectoryName(file), Path.GetFileNameWithoutExtension(file) + "_Base64decode.json");
 
-                        File.WriteAllText(outputPath, decodedContent);
+                        File.WriteAllText(outputPath3, decodedContent);
                         File.WriteAllText(outputPath2, decodedContent);
                         //MessageBox.Show($"デコード成功: {outputPath}");
                         counter++;
